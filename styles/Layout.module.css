@@ -1,0 +1,38 @@
+.page__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page__title {
+  font-family: "Abril";
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(41, 41, 41);
+  margin: 0;
+  text-align: center;
+}
+
+.v_divider {
+  border-bottom: 4px solid rgb(97, 78, 221);
+  width: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .page__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .page__container {
+    width: 1300px;
+    margin: 0 auto;
+  }
+}

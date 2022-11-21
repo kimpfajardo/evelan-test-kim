@@ -1,0 +1,75 @@
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.nav__item {
+  padding: 10px 15px;
+  font-family: "Zilla";
+}
+
+.nav__item:hover {
+  font-weight: bold;
+}
+
+.nav__item__active {
+  border-bottom: 2px solid black;
+  font-weight: bold;
+}
+
+.nav__mobile {
+  visibility: hidden;
+  height: 0;
+}
+
+.nav__mobile__btn {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.nav__mobile__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 425px) {
+  .nav__mobile {
+    visibility: visible;
+    padding-top: 20px;
+  }
+
+  .nav__mobile__show {
+    transform: translate(0, 0) !important;
+  }
+
+  .nav__item {
+    font-size: 24px;
+    color: rgb(129, 119, 190);
+    padding: 10px;
+  }
+
+  .nav__item__active {
+    border: none;
+    margin-left: 10px;
+    color: white;
+  }
+
+  .nav__mobile__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: darkslateblue;
+    transform: translate(-100%, 0);
+    transition: all 200ms;
+    padding: 20px 20px 0;
+    z-index: 99;
+  }
+  .nav {
+    visibility: hidden;
+    height: 0;
+  }
+}

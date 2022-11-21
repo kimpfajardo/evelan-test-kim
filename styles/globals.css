@@ -15,12 +15,28 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+@font-face {
+  font-family: "Abril";
+  src: url("/fonts/abril.ttf");
+}
+
+@font-face {
+  font-family: "Zilla";
+  src: url("/fonts/zilla.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/montserrat.ttf");
+}
+
+@media only screen and (min-width: 1024px) {
+  .page__title {
+    font-family: "Abril";
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(41, 41, 41);
+    margin: 0;
   }
 }
+

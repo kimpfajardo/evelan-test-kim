@@ -1,0 +1,28 @@
+.container {
+  padding: 10px 15px;
+  background-color: rgba(247, 99, 99, 0.692);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  transition: all 100ms linear;
+}
+
+.error {
+  font-family: "Montserrat";
+}
+
+.error__dismiss {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 100px;
+  transition: all 100ms linear;
+}
+
+.error__dismiss:hover {
+  background: rgb(247, 99, 99);
+}
