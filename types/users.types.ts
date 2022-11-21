@@ -52,3 +52,8 @@ export interface UsersListProps {
   initialData: User[];
   initialError: UserFailMessage;
 }
+
+export interface UserItemProps {
+  item: User;
+  key: number;
+}

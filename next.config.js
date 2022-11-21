@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ["reqres.in"],
   },
+  productionBrowserSourceMaps: true,
 };
 
 module.exports = nextConfig;
