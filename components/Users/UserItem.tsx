@@ -8,13 +8,16 @@ const UserItem = (props: UserItemProps) => {
     <div className={styles.card} key={key}>
       <div className={styles.user}>
         <div className={styles.user__avatar}>
-          <Image fill src={item.avatar} alt={`Image of ${item.first_name}`} />
+          <Image
+            fill
+            className={styles.user__avatar__img}
+            src={item.avatar}
+            alt={`Image of ${item.first_name}`}
+          />
         </div>
         <div className={styles.user__details}>
           <h2 className={styles.user__name}>
-            {`
-                  ${item.first_name} 
-                  ${item.last_name}`}
+            {`${item.first_name} ${item.last_name}`}
           </h2>
           <div className={styles.user__email}>{item.email}</div>
           <span className={styles.user__id}>{item.id}</span>

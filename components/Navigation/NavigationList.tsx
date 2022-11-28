@@ -16,10 +16,7 @@ const NavigationList = (props: Partial<MobileNavigationProps>) => {
           }`}
           href={link.url}
           key={index}
-          onClick={
-            handleClick as unknown as React.MouseEventHandler<HTMLAnchorElement>
-          }
-          prefetch={false}
+          onClick={handleClick as React.MouseEventHandler<HTMLAnchorElement>}
         >
           {link.label}
         </Link>
